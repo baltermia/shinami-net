@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Vendor\rpc-shared\Balter.Rpc.Shared\Balter.Rpc.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

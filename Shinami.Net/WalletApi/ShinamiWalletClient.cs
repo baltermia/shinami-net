@@ -1,11 +1,11 @@
-﻿using Shinami.Net.Rpc;
+﻿using Balter.Rpc.Shared;
 
 namespace Shinami.Net.WalletApi;
 
 public class ShinamiWalletClient : ApiClientBase, IShinamiWalletClient
 {
     public ShinamiWalletClient(string rpcUrl, string accessToken)
-        : base(rpcUrl, accessToken)
+        : base(rpcUrl + accessToken)
     { }
 
     public Task<Response<string>?> CreateWalletAsync(CreateWalletRequest request)

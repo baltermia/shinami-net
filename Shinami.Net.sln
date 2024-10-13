@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinami.Net", "Shinami.Net\Shinami.Net.csproj", "{938466F2-1906-4236-A796-8BC13F6B7146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shinami.Net", "Shinami.Net\Shinami.Net.csproj", "{938466F2-1906-4236-A796-8BC13F6B7146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendor", "Vendor", "{1C499681-A6ED-491C-98DF-F96C52833C66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Balter.Rpc.Shared", "Vendor\rpc-shared\Balter.Rpc.Shared\Balter.Rpc.Shared.csproj", "{2361DEA9-A7F1-434F-904D-18377415D372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{938466F2-1906-4236-A796-8BC13F6B7146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938466F2-1906-4236-A796-8BC13F6B7146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938466F2-1906-4236-A796-8BC13F6B7146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2361DEA9-A7F1-434F-904D-18377415D372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2361DEA9-A7F1-434F-904D-18377415D372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2361DEA9-A7F1-434F-904D-18377415D372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2361DEA9-A7F1-434F-904D-18377415D372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2361DEA9-A7F1-434F-904D-18377415D372} = {1C499681-A6ED-491C-98DF-F96C52833C66}
 	EndGlobalSection
 EndGlobal

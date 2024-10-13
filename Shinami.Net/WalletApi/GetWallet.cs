@@ -1,4 +1,4 @@
-﻿using Shinami.Net.Rpc;
+﻿using Balter.Rpc.Shared;
 
 namespace Shinami.Net.WalletApi;
 
