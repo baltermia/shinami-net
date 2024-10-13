@@ -3,11 +3,11 @@ using Balter.Shinami.Net.KeyApi.Requests;
 
 namespace Balter.Shinami.Net.KeyApi;
 
-public class ShinamiKeyApi : IShinamiKeyApi
+public class ShinamiKeyClient : IShinamiKeyClient
 {
     private readonly IRpcClient _rpc;
 
-    public ShinamiKeyApi(string rpcUrl)
+    public ShinamiKeyClient(string rpcUrl)
     { 
         _rpc = new JsonRpcClient(rpcUrl);
     }
