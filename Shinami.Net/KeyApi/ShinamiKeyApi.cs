@@ -2,14 +2,11 @@
 
 namespace Shinami.Net.KeyApi;
 
-public class ShinamiKeyApi : IShinamiKeyApi
+public class ShinamiKeyApi : ApiClientBase, IShinamiKeyApi
 {
-    private readonly JsonRpcClient _rpc;
-
     public ShinamiKeyApi(string rpcUrl, string accessToken)
-    {
-        _rpc = new JsonRpcClient(rpcUrl + accessToken);
-    }
+        : base(rpcUrl, accessToken)
+    { }
 
     public Task<Response<string>?> CreateSessionAsync(CreateSessionRequest request)
     {
