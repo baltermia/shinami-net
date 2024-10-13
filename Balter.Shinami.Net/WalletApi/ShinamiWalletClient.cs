@@ -1,4 +1,5 @@
 ﻿using Balter.Rpc.Shared;
+using Balter.Shinami.Net.WalletApi.Requests;
 
 namespace Balter.Shinami.Net.WalletApi;
 
