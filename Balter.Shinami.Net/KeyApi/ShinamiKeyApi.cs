@@ -2,16 +2,19 @@
 
 namespace Balter.Shinami.Net.KeyApi;
 
-public class ShinamiKeyApi : ApiClientBase, IShinamiKeyApi
+public class ShinamiKeyApi : IShinamiKeyApi
 {
+    private readonly IRpcClient _rpc;
+
     public ShinamiKeyApi(string rpcUrl, string accessToken)
-        : base(rpcUrl + accessToken)
-    { }
+    { 
+        _rpc = new JsonRpcClient(rpcUrl + accessToken);
+    }
 
     public Task<Response<string>?> CreateSessionAsync(CreateSessionRequest request)
     {
         const string method = "shinami_key_createSession";
-        return _rpc.GetFromJsonAsync<string>(method, request);
+        return _rpc.SendRequestAsync<string>(method, request);
     }
 
 }
