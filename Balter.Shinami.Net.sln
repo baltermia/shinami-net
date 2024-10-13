@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shinami.Net", "Shinami.Net\Shinami.Net.csproj", "{938466F2-1906-4236-A796-8BC13F6B7146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Balter.Shinami.Net", "Balter.Shinami.Net\Balter.Shinami.Net.csproj", "{938466F2-1906-4236-A796-8BC13F6B7146}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendor", "Vendor", "{1C499681-A6ED-491C-98DF-F96C52833C66}"
 EndProject

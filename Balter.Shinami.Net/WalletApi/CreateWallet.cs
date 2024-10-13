@@ -1,6 +1,6 @@
 ﻿using Balter.Rpc.Shared;
 
-namespace Shinami.Net.WalletApi;
+namespace Balter.Shinami.Net.WalletApi;
 
 public class CreateWalletRequest : IRequestParams
 {

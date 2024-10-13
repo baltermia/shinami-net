@@ -1,6 +1,6 @@
 ﻿using Balter.Rpc.Shared;
 
-namespace Shinami.Net.KeyApi;
+namespace Balter.Shinami.Net.KeyApi;
 
 public class CreateSessionRequest : IRequestParams
 {
