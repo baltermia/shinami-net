@@ -7,9 +7,9 @@ public class ShinamiKeyApi : IShinamiKeyApi
 {
     private readonly IRpcClient _rpc;
 
-    public ShinamiKeyApi(string rpcUrl, string accessToken)
+    public ShinamiKeyApi(string rpcUrl)
     { 
-        _rpc = new JsonRpcClient(rpcUrl + accessToken);
+        _rpc = new JsonRpcClient(rpcUrl);
     }
 
     public Task<Response<string>?> CreateSessionAsync(CreateSessionRequest request)
