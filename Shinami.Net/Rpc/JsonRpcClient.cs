@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace Shinami.Net.Rpc;
 
-public interface IJsonRpcClient : IDisposable
+public interface IJsonRpcClient 
 {
     public Task<Response<TResponse>?> GetFromJsonAsync<TResponse>(string method, IRequestParams data);
 }
@@ -41,11 +41,6 @@ public class JsonRpcClient : IJsonRpcClient
         Response<TResponse>? response = await httpResponse.Content.ReadFromJsonAsync<Response<TResponse>>(s_serializerOptions);
 
         return response;
-    }
-
-    public void Dispose()
-    {
-        _client.Dispose();
     }
 }
 
