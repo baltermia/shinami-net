@@ -3,7 +3,6 @@ using Shinami.Net.Rpc;
 
 namespace Shinami.Net.WalletApi;
 
-public interface IShinamiWalletClient
+public class ShinamiWalletClient : IShinamiWalletClient
 {
 }
-

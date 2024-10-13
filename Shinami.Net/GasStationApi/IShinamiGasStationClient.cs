@@ -1,5 +1,5 @@
 ﻿namespace Shinami.Net.GasStationApi;
 
-internal interface IShinamiGasStationClient
+public interface IShinamiGasStationClient
 { }
 
